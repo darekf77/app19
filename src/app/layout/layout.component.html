@@ -1,0 +1,17 @@
+<header class="layout__header">
+  <ng-content select="app-header"></ng-content>
+</header>
+
+<main class="layout__content">
+  <section class="layout__section">
+    <ng-content select="[main]"></ng-content>
+  </section>
+
+  <div class="layout__other-sections">
+    <ng-content select="[other-sections]"></ng-content>
+  </div>
+</main>
+
+<footer class="layout__footer">
+  <ng-content select="app-footer"></ng-content>
+</footer>

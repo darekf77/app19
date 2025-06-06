@@ -1,0 +1,36 @@
+$header-height: 60px;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout__header,
+.layout__footer {
+  flex: 0 0 auto;
+  height: $header-height;
+  background: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.layout__content {
+
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.layout__section {
+  height: calc( 100vh - $header-height );
+  background-color: lightgoldenrodyellow;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.layout__other-sections {
+  flex: 1;
+  padding: 1rem;
+  background: #fafafa;
+}
